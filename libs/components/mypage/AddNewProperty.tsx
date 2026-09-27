@@ -37,6 +37,7 @@ const AddProperty = ({ initialValues, ...props }: any) => {
 		variables: {
 			input: router.query.propertyId,
 		},
+		skip: !router.query.propertyId,
 	});
 
 	/** LIFECYCLES **/
